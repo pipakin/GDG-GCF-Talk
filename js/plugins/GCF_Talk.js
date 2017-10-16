@@ -3,7 +3,7 @@
     ImageManager.loadPicture = function(filename, hue) {
         if(filename.startsWith("http")) {
             var path = filename;
-            var bitmap = this.requestNormalBitmap(path, hue || 0);
+            var bitmap = this.loadNormalBitmap(path, hue || 0);
             bitmap.smooth = true;
             return bitmap;
         }
